@@ -5,6 +5,7 @@ import "./index.css";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import CreateBlog from "./pages/CreateBlog";
 
 const router = createBrowserRouter([
   {
@@ -14,9 +15,13 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
-  },{
+  },
+  {
     path: "/login",
     element: <Login/>,
+  },{
+    path: "/create",
+    element: <CreateBlog/>,
   },
 ]);
 
